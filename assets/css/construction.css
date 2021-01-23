@@ -1,0 +1,1282 @@
+/* =========== general css ========== */
+body{
+    font-family: 'Inter', sans-serif;
+}
+p{    
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #1d1820;
+    font-size: 16px;
+}
+small{
+    line-height: 1.71;
+    letter-spacing: 0.18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #1a171b;
+    font-weight: bold;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+    font-weight: normal;
+}
+label{
+    font-size: 14px;
+    line-height: 0.71;
+    letter-spacing: 0.2px;
+    color: #1b181d;
+}
+.row, .container-fluid, .columns, .col-sm-12{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 0;
+}
+p, h1, h2, h3, h4, h5, h6, ul{
+    margin: 0;
+}
+.text-right{
+    text-align: right;
+}
+.flex{
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+}
+.green{
+    color: #00ad21;
+}
+.light_green{
+    color: #6fd543;
+}
+.white{
+    color: #fff;
+}
+a{
+    color: #1b181d;
+}
+a:focus{
+    outline: none;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+textarea[type="text"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(26, 23, 27, 0.14);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.075);
+  outline: 0 none;
+}
+
+/* =========== navbar css ========== */
+nav{
+    background-color: #f7f7f7;
+    padding: 17px 21px 34px 24px!important;
+}
+.navbar-light .navbar-nav .nav-link{
+    margin: 0 16px;
+    padding: 0.5rem 0!important;
+    line-height: 0.71;
+    letter-spacing: 0.2px;
+    color: #1b181d!important;
+}
+.navbar-light .navbar-nav .nav-item:first-child .nav-link{
+    margin: 0 16px 0 25px;
+}
+.navbar-light .hamburger{
+    border-color: rgba(0,0,0,0);
+    padding: 2px 0;
+    background-color: #f7f7f7;
+}
+.navbar-light.prefabbricati_nav .hamburger{
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar-light .hamburger:focus{
+    outline: unset;
+}
+.navbar-light .hamburger p{
+    width: 29px;
+    height: 1px;
+    background-color: #1a171b;
+    margin: 9px 0;
+}
+.navbar-light.prefabbricati_nav .hamburger p{    
+    background-color: #fff;
+}
+.navbar-light.prefabbricati_nav .navbar-toggler-icon{
+    background-image: url("../image/hamburger.jpg");
+}
+.nav_phone span{
+    margin: 7px 28px 2px 9px;
+}
+.btn i{
+    font-size: 18px;
+}
+.btn{
+    font-size: 14px;
+}
+.btn-success{
+    background-color: #00ad21;
+    padding: 11px 20px 11px 22px;
+    border-radius: 5px;
+}
+.btn-success a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-success:hover{
+    box-shadow: 0 9px 21px 0 rgba(139, 185, 187, 0.3);
+    background-color: #00ad21;
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .hamburger {
+        display: block;
+    }
+}
+
+/* =========== hero css ========== */
+.slideshow-container {
+    position: relative;
+    margin: -24px 0 0 0;
+    padding: 0 26px 0 0;
+}
+.mySlides {
+    display: none;
+}
+.slideshow-container .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.hero_block{
+    padding: 0 0 0 105px;
+    align-items: center;
+}
+.hero_block .logo{
+    width: 100%;
+    max-width: 230px;
+}
+.hero_block .Costruzioni-Antoniol{
+    margin: 42px 0 0 0;
+}
+.hero_block .Prefabbricati-per-og{
+    font-size: 50px;
+    margin: 18px 0 0 0;
+    line-height: 1.04;
+}
+.hero_block .hero_arrow_down{
+    margin: 25px 0 0 0;
+    cursor: pointer;
+}
+
+/* =========== main section menu css ========== */
+.menu{
+    text-align: center;
+    border: 1px solid #f7f7f7;
+    padding: 33px 0 16px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.menu li{
+    margin: 0 30px 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+}
+.menu li:hover{
+    color:#6fd543;
+}
+.menu li.active{
+    color: #6fd543;
+}
+#altro_modal{
+    padding-right: 0!important;
+}
+#altro_modal a:hover{
+    color: #6fd543;
+    text-decoration: none;
+    border-bottom: #6fd543;
+}
+.menu .dropdown-menu{
+    top: 60px!important;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+#altro_modal .modal-content{
+    border: 0;
+    border-radius: 0;
+}
+
+#altro_modal .modal-header{
+    display: block;
+    padding: 0;
+    border-bottom: none;
+}
+#altro_modal .modal-header p{
+    color: #1b181d;
+    line-height: 0.71;
+    display: inline-block;
+    letter-spacing: 0.2px;
+    margin: 35px 29px 27px 21px;
+    cursor: pointer;
+}
+#altro_modal .modal-header .close{
+    float: left;
+    padding: 26px 30px 25px;
+    margin: 0;
+    color: #f7f7f7;
+    background-color: #1a171b;
+    opacity: 1;
+}
+#altro_modal .modal-body{
+    padding: 72px 0 83px 0;
+}
+#altro_modal .modal-body .modal_title{
+    font-size: 20px;
+    margin: 0 0 0 260px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #1a171b;
+}
+#altro_modal .modal-body .modal_title:hover{
+    color: #6fd543;
+}
+#altro_modal .modal-body .col-lg-6{
+    padding: 0;
+}
+#altro_modal .modal-body ul {
+    display: inline-block;
+    list-style-type: none;
+}
+#altro_modal .modal-body ul li{
+    margin: 18px 0 0;
+    font-size: 16px;
+    line-height: 2.06;
+    letter-spacing: 0.2px;
+    color: #1d1820;
+}
+#altro_modal .modal-body .first_prefabbricati_list{
+    padding: 0 0 0 261px;
+}
+#altro_modal .modal-body .second_prefabbricati_list{
+    padding: 0 0 0 71px;
+}
+#altro_modal .modal-body .third_prefabbricati_list{
+    padding: 0 0 0 261px;
+}
+#altro_modal .modal-body .third_prefabbricati_list li{
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #1a171b;
+}
+#altro_modal .modal-footer{
+    border-top: 0;
+    padding: 0;
+    margin-bottom: 65px;
+}
+#altro_modal .modal-footer .container{
+    padding: 53px 38px 52px 63px;
+    color: #fff;
+    background-color: #1a171b;
+    display: flex;
+    justify-content: space-between;
+}
+#altro_modal .modal-footer .container h5{
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    color: #fff;
+}
+#altro_modal .modal-footer .container a{
+    /* border-bottom: 1px solid #6fd543; */
+    padding: 0 5px;
+}
+#altro_modal .modal-footer .container .social_icons a{
+    border-bottom: none;
+    color: #fff;
+}
+#altro_modal .modal-footer .container .social_icons a:hover{
+    color: #6fd543;
+}
+#altro_modal .modal-footer .container form p{
+    line-height: 0.71;
+    letter-spacing: 0.2px;
+    margin: 0 28px 0 0;
+}
+#altro_modal .modal-footer .container form button{
+    margin: 0 0 0 49px;
+}
+#altro_modal .modal-footer .infocostruzionianto{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid #6fd543;
+}
+#altro_modal .modal-footer .infocostruzionianto:hover{
+    text-decoration: none;
+    color: #6fd543;
+}
+
+/* =========== company css ========== */
+.title{
+    line-height: 1.1;
+    letter-spacing: normal;
+    margin: 5px 0 0 0;
+}
+.read_more{
+    margin: 0 auto;
+    background-color: unset;
+    text-align: center;
+    padding: 13px 5px 11px 9px;
+    border: none;    
+    border-radius: 0;
+    border-bottom: 2px solid #00ad21;
+    line-height: 0.71;
+    letter-spacing: 0.2px;
+}
+.read_more:hover{
+    background-color: #00ad21;
+    color: #fff;
+}
+.company{
+    padding: 73px 0 85px;
+}
+.small_title{
+    height: 24px;
+    line-height: 0.71;
+    letter-spacing: 4px;
+}
+.company .company_text{
+    font-size: 16px;
+    height: 96px;
+    color: #1d1820;
+    margin: 35px 0 13px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+.my-owl-nav {
+    margin-top: 78px;
+    width: 100%;
+}
+.my-next-button{
+    float: right;
+    cursor: pointer;
+}
+.my-prev-button{
+    cursor: pointer;
+}
+.my-owl-nav span:hover {
+    cursor: pointer;
+}
+
+/* =========== Prefabbricati css ========== */
+.prefabbricati_slider{
+    background-color: #f7f7f7;
+    padding: 57px 0 83px;
+    position: relative;
+}
+.subtitle{
+    line-height: 1.41;
+}
+.prefabbricati_slider_row{
+    margin: 46px 0 0 0;
+}
+.prefabbricati_slider .prefabbricati_title{
+    margin: 29px 0 5px;
+    height: 66px;
+}
+.prefabbricati_slider .prefabbricati_description{
+    margin: 5px 0 23px 30px;
+}
+.prefabbricati_slider .read_more{
+    margin: 0 0 0 30px;
+}
+
+/* =========== Realizzazioni css ========== */
+.realizzazioni{
+    height: 530px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 173, 33, 1)),url(../image/progettazione.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.realizzazioni_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+}
+.realizzazioni_text{
+    font-size: 16px;
+    margin: 28px 0 23px;
+    height: 72px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+.prefabbricati_slider1{
+    background-color: #fff;
+}
+.prefabbricati_slider1 .certificazioni{
+    margin: -100px 0 0 0;
+}
+.prefabbricati_slider1 .prefabbricati_title{
+    height: 47px;
+    font-size: 28px;
+}
+
+/* =========== Contattaci css ========== */
+.contattaci{
+    padding: 83px 0 0 0;
+    position: relative;
+}
+.contattaci_container.contattaci{
+    padding: 83px 0 134px 0;
+}
+.contattaci .subtitle{
+    margin: 5px 0 38px;
+}
+.contact_form{
+    padding: 47px 205px 107px;
+}
+.contattaci .contact_form input{
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #1d1820;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+.contattaci .contact_form textarea{
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #1d1820;
+    border-radius: 5px;
+    height: 238px;
+    background-color: #f7f7f7;
+}
+.contattaci .contact_form .form-group label{
+    margin: 38px 0 15px;
+}
+.form-group{
+    margin-bottom: 0;
+}
+.form-check {
+    margin: 25px 0 35px;
+    display: block;
+    position: relative;
+    padding-left: 41px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.form-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-check input:checked ~ .checkmark {
+    background-color: #00ad21;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check .checkmark:after {
+    left: 11px;
+    top: 5px;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.contact_info{
+    margin: 38px 0 0 0;
+}
+.contattaci_container .contact_form{
+    padding: 0 60px 0 0;
+}
+.contact_info{
+    margin: 38px 0 0 0;
+    padding-left: 64px;
+}
+.contact_info:first-child{
+    margin: 50px 0 0 0;
+}
+
+/* =========== footer css ========== */
+footer{
+    padding: 83px 0 29px 0;
+    color: #fff;
+    background-color: #1a171b;
+    font-size: 14px;
+}
+footer p, footer span{
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin: 9px 0 0 0;
+}
+footer .col-md-4{
+    padding: 0;
+}
+.footer_socials{
+    padding: 0 0 64px 0;
+}
+.footer_social_icons{
+    float: right;
+}
+.footer_social_icons a{
+    color: #fff;
+    font-size: 18px;
+}
+.footer_social_icons a:hover{
+    color:#6fd543;
+}
+.sede{
+    position: relative;
+}
+.sede01{
+    padding: 34px 0 0 0;
+    width: 100%;
+}
+.sede02{
+    padding: 76px 0 0 0;
+}
+.footer_large_logo{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.download_pdf{
+    margin: 85px 0 0 0;
+    padding: 22px 0 17px 36px;
+    border-radius: 10px;
+    background-color: #221f24;
+    max-width: 517px;
+}
+.download_pdf img{
+    margin: 0 26px 0 0;
+}
+.download_link{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.29px;
+    border-bottom: 2px solid #6fd543;
+}
+.download_link:hover{
+    text-decoration: none;
+    color: #6fd543;
+}
+.copyright{
+    padding: 86px 0 29px;
+}
+.copyright p a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* =========== prefabbricati page css ========== */
+.prefabbricati_nav{
+    padding: 14px 18px 14px 24px!important;
+    background-color: #1a171b;
+}
+.navbar-light.prefabbricati_nav .navbar-toggler p{
+    background-color: #fff;
+}
+.navbar-light.prefabbricati_nav .navbar-nav .nav-link{
+    color: #fff!important;
+}
+.prefabbricati_nav .center_logo{
+    position: absolute;
+    left: 40%;
+    top: 15px;
+    min-width: 20%;
+}
+.prefabbricati_menu{
+    padding: 22px 0 19px 0;
+    background-color: #242225;
+    color: #fff;
+    border: 0;
+    margin-bottom: 0;
+}
+.prefabbricati_hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0 0 165px;
+    background-color: #1a171b;
+}
+.prefabbricati_hero .Prefabbricati-per-og{
+    color: #fff;
+    margin: 14px 0 0 0;
+}
+.prefabbricati_hero .Costruzioni-Antoniol{
+    color: #6fd543;
+}
+.prefabbricati_section{
+    padding: 19px 0 39px;
+    background-color: #f7f7f7;
+}
+.prefabbricati_section_label{
+    /* padding: 0 30px; */
+    padding: 0 30px 0 0;
+}
+.prefabbricati_section h2{
+    margin: 62px 0 31px;
+}
+.prefabbricati_section h2.prefabbricati_section_title{
+    /* margin: 62px 30px 31px; */
+    margin: 62px 0 31px;
+}
+.prefabbricati_section p.prefabbricati_section_text{
+    min-height: 80px;
+}
+.prefabbricati_section p{
+    /* padding: 0 30px; */
+    padding: 0;
+}
+.prefabbricati_slider_double_row{
+    margin: 53px 0 0 0;
+}
+.prefabbricati_slider .row:last-child .prefabbricati_slider_double_row{
+    margin: 73px 0 0 0;
+}
+.prefabbricati_slider .azienda_slider{
+    margin: 56px 0 0 0!important;
+}
+#prefabbricati_section .prefabbricati_slider{
+    background-color: #fff;
+    padding: 0 0 92px;
+}
+
+/* =========== prefabbricati detail page css ========== */
+.Muro-di-sostegno-pre{
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin: 66px 0 28px;
+}
+.Sed-ut-perspiciatis{
+    margin: 44px 0 0 0;
+}
+.vantaggi{
+    padding: 52px 0 37px 64px;
+    margin: 64px 11px 105px 0;
+    box-shadow: 0 2px 64px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    height: 396px;
+    width: 539px;
+    z-index: 999;
+}
+.vantaggi h4{
+    line-height: 0.96;
+    letter-spacing: normal;
+    margin: 0 0 24px 0;
+}
+.vantaggi ul, .dati_tecnici ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.vantaggi ul li, .dati_tecnici ul li{
+    list-style-type: none;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin: 6px 0 0 0;
+}
+.vantaggi ul li:before{
+    content: '\2192';
+}
+.dati_tecnici{
+    position: ABSOLUTE;
+    right: 0;
+    top: 0;
+    margin: 114px 0 0 -65px;
+    padding: 61px 0px 56px 161px;
+    background-color: #f7f7f7;
+    width: 635px;
+}
+.dati_tecnici h4{
+    line-height: 0.96;
+    letter-spacing: normal;
+    margin: 0 0 24px 0;
+}
+.dati_tecnici ul li{
+    list-style-type: none;
+}
+.dati_tecnici h4{
+    margin: 0 0 24px 0;
+}
+
+/* =========== azienda page css ========== */
+.animate_numbers{
+    background-color: #f7f7f7;
+    margin: 53px 0 56px;
+    padding: 34px 0 45px;
+}
+.animate_numbers h1{
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+.animate_numbers .col-md-4{
+    padding: 48px 0 36px;
+}
+.animate_numbers .col-md-4:nth-child(2){
+    border-right: 1px solid rgba(151, 151, 151, 0.2);
+    border-left: 1px solid rgba(151, 151, 151, 0.2);
+}
+.azienda_slider{
+    margin: 56px 0 0 0;
+}
+
+/* =========== Realizzazioni page css ========== */
+.filter{
+    /* margin: 58px 0 0 0;
+    padding: 21px 0;
+    border-radius: 36.5px;
+    background-color: #fff;
+    text-align: center; */
+    padding: 22px 0 19px 0;
+    margin: 58px 0 0 0;
+    text-align: center;
+    background-color: #242225;
+    color: #fff;
+    border: 0;
+    margin-bottom: 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+.filter li{
+    margin: 0 16px;
+    padding: 11px 8px 9px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 0.71;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.filter li.active{
+    color: #6fd543;
+}
+.filter li:hover{
+    color: #6fd543;
+    /* border-radius: 15.5px;
+    background-color: #E5F6E8; */
+}
+.filter_items{
+    padding: 50px 0;
+}
+.filter_items .col-lg-6{
+    padding: 0 15px;
+}
+.filter_items .card{
+    box-shadow: 0 2px 64px 0 rgba(0, 0, 0, 0.07);
+    margin: 0 0 31px 0;
+}
+.filter_items .card .card-header{
+    padding: 0;
+    border-bottom: none;
+}
+.filter_items .card .card-header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.filter_items .card .card-body{
+    padding: 0 28px 87px 30px;
+    box-shadow: 0 2px 64px 0 rgba(0, 0, 0, 0.07);
+}
+.filter_items .card .card-body .date-range{
+    margin: 25px 0 22px;
+    padding: 12px 0 12px 25px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+.filter_items .card .card-body h4{
+    height: 66px;
+    margin: 22px 0 16px;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+.filter_items .card .card-body small{
+    margin: 20px 0 0 0;
+    display: block;
+    height: 25px;
+}
+.filter_items .card .card-body .show_more{
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    padding: 9px 14px 5px 25px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #00ad21;
+    position: absolute;
+    bottom: 47px;
+    right: 30px;
+    background-color: transparent;
+}
+.filter_items .card .card-body .show_more:hover{
+    background-color: #00ad21;
+    color: #fff;
+}
+.filter_items .card .card-body .show_more .fa-angle-down:before {
+    content: "\f107";
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    font-size: 20px;
+}
+.card-nav {
+    width: 100%;
+    margin: -40px 0 0 0;
+    z-index: 999;
+    padding: 0 20px;
+}
+#map {
+    height: 550px;
+}
+.mobile_menu{
+    display: none;
+}
+.privacy_link:hover{
+    color: #6fd543!important;
+}
+
+/* =========== Responsive css ========== */
+@media (max-width: 992px){
+    .navbar-collapse{
+        text-align: center;
+        position: relative;
+    }
+    .navbar-collapse ul li{
+        margin: 10px 0;
+    }
+    .navbar-collapse form{
+        justify-content: center;
+    }
+    .navbar-light .navbar-nav .nav-item:first-child .nav-link{
+        margin: 0;
+    }
+    .prefabbricati_slider .col-lg-6{
+        text-align: center;
+    }
+    .prefabbricati_slider .col-lg-6:last-child{
+        margin: 50px 0 0 0;
+    }
+    .contact_form {
+        padding: 47px 100px 107px;
+    }
+    footer .sede .sede01 .col-lg-4{
+        margin: 0 0 30px 0;
+    }
+    .footer_socials {
+        padding: 0 182px 0 0;
+    }
+    .copyright .footer_social_icons{
+        float: unset;
+        margin: 30px 0 0 0;
+        text-align: unset;
+    }
+    #altro_modal .modal-body .modal_title{
+        margin: 0 0 0 50px;
+    }
+    #altro_modal .modal-body .first_prefabbricati_list, #altro_modal .modal-body .second_prefabbricati_list{
+        padding: 0 0 0 50px;
+    }
+    #altro_modal .modal-body .third_prefabbricati_list{
+        padding: 0;
+    }
+    #altro_modal .modal-footer .container{
+        display: block;
+        text-align: center;
+    }
+    #altro_modal .modal-footer .container form{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .prefabbricati_nav ul{
+        margin: 70px 0 0 0;
+    }
+    .prefabbricati_nav .center_logo{
+        top: 0;
+    }
+    /* detail page */
+    .dati_tecnici{
+        position: relative;
+        margin: 0;
+        padding: 61px 0px 56px 64px;
+        width: 539px;
+    }
+    /* contact us page */
+    .contattaci_container .contact_form{        
+        padding: 0 60px 0 100px;
+    }
+    .contattaci.contattaci_container {
+        padding: 83px 0;
+    }
+    .contattaci.contattaci_container .contact_info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .prefabbricati_hero{
+        padding: 19px 0 0 100px;
+    }
+    .prefabbricati_hero img{
+        width: 50%;
+    }
+    .hero_block {
+        padding: 0 0 0 50px;
+    }
+    .hero_block .Prefabbricati-per-og {
+        font-size: 32px;
+    }
+    .hero_block .hero_arrow_down{
+        height: 30px;
+    }
+    .prefabbricati_slider{
+        padding: 57px 100px 83px;
+    }
+    .contact_form {
+        padding: 47px 76px 107px;
+    }
+    footer{
+        padding: 83px 0 29px 100px;
+    }
+    .footer_large_logo{
+        top: 30px;
+        width: 50%;
+    }
+    .sede02{
+        padding: 34px 0 0 0;
+    }
+    /* prefabbricati page */
+    /* .prefabbricati_section{
+        padding: 19px 100px 39px;
+    } */
+    #prefabbricati_section .prefabbricati_slider{
+        padding: 0 100px 92px;
+    }
+    /* realizzazioni page */
+    .filter_items{
+        padding: 50px 100px;
+    }
+    .copyright{
+        margin: 0;
+        padding: 50px 0 29px;
+    }
+}
+
+@media (max-width: 576px){
+    .slideshow-container {
+        margin: 0;
+        padding: 0;
+    }
+    .hero_block {
+        padding: 30px;
+    }
+    nav {
+        padding: 17px 21px 17px 24px!important;
+    }
+    .menu{
+        padding: 16px 0;
+    }
+    .company{
+        padding: 50px 30px;
+    }
+    .read_more{
+        margin: 40px auto 0;
+    }
+    .prefabbricati_slider {
+        padding: 50px 30px;
+    }
+    .prefabbricati_slider .read_more {
+        margin: 0;
+    }
+    .prefabbricati_slider .prefabbricati_description {
+        margin: 5px 0 23px 0;
+    }
+    .my-owl-nav {
+        margin-top: 30px;
+    }
+    .contattaci{
+        padding: 50px 30px 0;  
+    }
+    .contact_form {
+        padding: 50px 0;
+    }
+    .form-check input {
+        width: 24px;
+        height: 24px;
+    }
+    .form-check label {
+        margin: 0px 0 0 42px;
+        line-height: 1.2;
+    }
+    footer {
+        padding: 50px 0 30px 30px;
+    }
+    .footer_large_logo{
+        position: relative;
+        width: 100%;
+    }
+    .footer_socials {
+        padding: 0 30px 0 0;
+    }
+    .footer_social_icons{
+        margin: 10px 0 0 0;
+    }
+    .download_pdf{
+        width: 95%;
+        padding: 22px 0 17px 25px;
+    }
+    .download_pdf img {
+        margin: 0 26px 20px 0;
+        display: block;
+    }
+    .download_link{
+        margin: 15px 0 0 0;
+        font-size: 16px;
+    }
+    #map {
+        height: 400px;
+    }
+    /* prefabbricati page */
+    .prefabbricati_nav{
+        padding: 20px 18px 20px 24px!important;
+    }
+    .prefabbricati_nav .center_logo{
+        left: 100px;
+    }
+    .prefabbricati_hero {
+        padding: 50px 0 50px 20px;
+    }
+    .prefabbricati_hero img {
+        width: 45%;
+    }
+    /* .prefabbricati_section {
+        padding: 19px 30px 39px;
+    } */
+    #prefabbricati_section .prefabbricati_slider {
+        /* padding: 0 30px 92px; */
+        padding: 0 30px 50px;
+    }
+    #prefabbricati_section label{
+        line-height: 1.2;
+        /* padding: 0 30px 30px 41px; */
+    }
+    .prefabbricati_section_label{
+        padding: 0 30px;
+    }
+    .prefabbricati_section h2.prefabbricati_section_title{
+        margin: 30px;
+    }
+    .prefabbricati_section p.prefabbricati_section_text{
+        padding: 0 30px;
+    }
+    .filter_items{
+        padding: 50px 30px;
+    }
+    /* detail page */
+    .Muro-di-sostegno-pre {
+        margin: 30px 30px 0 30px;
+        /* margin: 30px 0 0 0; */
+    }
+    /* contact us page */
+    .contattaci.contattaci_container {
+        padding: 0 0 50px 0;
+    }
+    .contattaci .contact_form .form-group label {
+        padding: 0!important;
+    }
+    .contattaci_container .contact_form {
+        padding: 0 30px;
+    }
+    /* azienda page */
+    .animate_numbers{
+        margin: 50px 0 0 0;
+    }
+    .vantaggi {
+        padding: 52px 30px 30px 30px;
+        margin: 64px 0 30px;
+        width: 100%;
+    }
+    .dati_tecnici{
+        padding: 52px 30px 30px 30px;
+        width: 100%;
+    }
+    /* modal */
+    .modal-dialog{
+        margin: 0;
+    }
+    #altro_modal .modal-body{
+        padding: 50px 0 50px 30px;
+    }
+    #altro_modal .modal-body .modal_title {
+        margin: 0;
+    }
+    #altro_modal .modal-body .first_prefabbricati_list, #altro_modal .modal-body .second_prefabbricati_list {
+        padding: 0;
+        display: block;
+    }
+    #altro_modal .modal-footer .container form button {
+        margin: 20px 0 0 0;
+    }
+    .filter_items .col-lg-6 {
+        padding: 0;
+    }
+    /* navbar menu */
+    .hero_block .logo {
+        display: none;
+    }
+    .hero_block .Costruzioni-Antoniol {
+        margin: 0;
+    }
+    .mobile_menu{
+        position: relative;
+        display: block;
+    }
+    .mobile_menu .mobile_contact{
+        background-color: #00ad21;
+        padding: 15px 0;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+    }
+    .mobile_menu .mobile_logo{
+        position: absolute;
+        top: 70px;
+        left: 110px;
+        width: 200px;
+        z-index: 888;
+    }
+    #altro_modal .modal-footer {
+        margin-bottom: 0;
+    }
+    #altro_modal .modal-footer .container{
+        text-align: left;
+        padding: 50px 30px;
+    }
+    #altro_modal .modal-footer .container form{        
+        justify-content: space-between;
+    }
+    #altro_modal .modal-footer .container form button {
+        display: none;
+    }
+    .checkmark{
+        top: 0;
+    }
+    .hero_block .hero_arrow_down{
+        display: none;
+    }
+}
